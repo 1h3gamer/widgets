@@ -1,0 +1,1 @@
+frame = Frame(master=root,height=200,width=360,bg="white")
