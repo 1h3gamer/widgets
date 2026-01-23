@@ -46,7 +46,7 @@ class restaurantApp():
                     price = self.menu[item]
                     cost = qty * price
                     total += price
-                    bill += f"{item} x {qty} = ${cost}"
+                    bill += f"{item} * {qty} = ${cost}"
             
         if total == 0:
             messagebox.showerror("Error","Please enter atleast one item")
@@ -56,5 +56,5 @@ class restaurantApp():
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app=restaurantApp.root()
+    app=restaurantApp(root)
     root.mainloop()
